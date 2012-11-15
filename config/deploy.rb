@@ -1,4 +1,5 @@
 require 'capistrano_colors'
+require "bundler/capistrano"
 
 set :application, "captest"
 set :repository,  "git@github.com:ogawakeisuke/captest.git"
@@ -15,6 +16,11 @@ ssh_options[:forward_agent] = true
 
 set :user, 'ogawa'
 set :user_sudo, true
+
+
+set :bundle_gemfile, "Gemfile" #バンドル系
+set :bundle_cmd, "bundle"
+set :bundle_roles, [:app]
 
 set :git_shallow_clone, 1
 
