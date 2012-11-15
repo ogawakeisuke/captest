@@ -1,0 +1,20 @@
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-15 14:59:36 +0900
+Connecting to database specified by database.yml
+Processing by HellosController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `lender' for #<HellosController:0x007fe2ef698be0>):
+  app/controllers/hellos_controller.rb:4:in `index'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p194@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p194@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p194@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-15 14:59:51 +0900
+Processing by HellosController#index as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.0ms)

@@ -22,6 +22,12 @@ end
 
 gem 'jquery-rails'
 
+
+gem 'capistrano'
+gem 'capistrano_colors'
+
+gem 'unicorn'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
