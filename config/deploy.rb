@@ -10,18 +10,20 @@ set :rails_env, "development"
 set :scm, :git
 set :branch, "master"
 set :scm_verbose, true
+default_run_options[:pty] = true
+ssh_options[:forward_agent] = true
 
 set :user, 'ogawa'
 set :user_sudo, true
 
 set :git_shallow_clone, 1
 
-default_run_options[:pty] = true #まじない
-ssh_options[:forward_agent] = true #まじない
-
 role :web, "ec2-54-242-182-42.compute-1.amazonaws.com"                          # Your HTTP server, Apache/etc
 role :app, "ec2-54-242-182-42.compute-1.amazonaws.com"                          # This may be the same as your `Web` server
 role :db,  "ec2-54-242-182-42.compute-1.amazonaws.com", :primary => true # This is where Rails migrations will run
+
+set :unicorn_config, "#{current_path}/config/unicorn.rb"
+set :unicorn_pid, "#{current_path}/tmp/pids/unicorn.pid"
 
 
 #unicornスタート設定　完コピ
