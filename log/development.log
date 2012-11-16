@@ -3300,3 +3300,4 @@ ActionView::Template::Error (wrong number of arguments(7 for 1)):
   Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
   Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
   Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.8ms)
+Connecting to database specified by database.yml

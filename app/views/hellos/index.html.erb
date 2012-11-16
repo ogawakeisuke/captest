@@ -1,13 +1,13 @@
+<div id="wrap">
+  <table>
+    <% @diaries.each do |dia| %>
+      <tr>
+        <td><%= dia.title %></td>
+      </tr>
 
-
-<table>
-  <%= @diaries.each do |dia| %>
-    <tr>
-      <td><%= dia.title %></td>
-    </tr>
-
-    <tr>
-      <td><%= markdown(dia.text) %></td>
-    </tr>
-  <% end %>
-</table>
+      <tr>
+        <td><%= markdown(dia.text) %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
