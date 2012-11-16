@@ -43,7 +43,7 @@ end
 #unicornスタート設定　完コピ
 namespace :deploy do
   task :start, :roles => :app do 
-    run "cd #{current_path} && BUNDLE_GEMFILE=#{current_path}/Gemfile bundle exec unicorn -c #{unicorn_config} -E #{rails_env} -D"
+    run "cd #{current_path} && bundle exec unicorn_rails -c #{unicorn_config} -E #{rails_env} -D"
   end
   task :stop, :roles => :app do 
     run "if test -f #{unicorn_pid};then kill `cat #{unicorn_pid}`; fi"
