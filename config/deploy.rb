@@ -42,19 +42,13 @@ end
 
 #unicornスタート設定　完コピ
 namespace :deploy do
-  task :start, :roles => :app, :except => { :no_release => true } do 
+  task :start, :roles => :app do 
     run "cd #{current_path} && BUNDLE_GEMFILE=#{current_path}/Gemfile bundle exec unicorn -c #{unicorn_config} -E #{rails_env} -D"
   end
-  task :stop, :roles => :app, :except => { :no_release => true } do 
-    run "#{try_sudo} kill `cat #{unicorn_pid}`"
+  task :stop, :roles => :app do 
+    run "if test -f #{unicorn_pid};then kill `cat #{unicorn_pid}`; fi"
   end
-  task :graceful_stop, :roles => :app, :except => { :no_release => true } do
-    run "#{try_sudo} kill -s QUIT `cat #{unicorn_pid}`"
-  end
-  task :reload, :roles => :app do
-    run "#{try_sudo} kill -s USR2 `cat #{unicorn_pid}`"
-  end
-  task :restart, :roles => :app, :except => { :no_release => true } do
+  task :restart, :roles => :app do
     stop
     start
   end
