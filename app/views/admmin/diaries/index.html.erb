@@ -1,0 +1,22 @@
+
+<table>
+  <tr>
+    <th>title</th>
+    <th>date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+
+  <%= @diaries.each do |dia| %>
+    <td><%=dia.title %></td>
+    <td><%=dia.created_at %></td>
+    <td><%= link_to 'Show', "admmin/diaries/#{dia.id}" %></td>
+    <td><%= link_to 'Edit', "admmin/diaries/#{dia.id}/edit"%></td>
+    <td><%= link_to 'Destroy', "admmin/diaries/#{dia.id}", confirm: 'Are you sure?', method: :delete %></td>
+  <% end %>
+</table>
+
+<%= link_to 'New', :action =>"new" %>
+

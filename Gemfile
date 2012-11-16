@@ -10,8 +10,8 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 
 gem 'mysql2'
 
-gem 'redcarpet'
-
+gem 'redcarpet', '1.17.2'
+gem 'gollum'
 
 # Gems used only for assets and not required
 # in production environments by default.

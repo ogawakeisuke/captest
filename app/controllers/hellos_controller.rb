@@ -1,6 +1,13 @@
 # -*- coding: utf-8 -*-
 class HellosController < ApplicationController
+
   def index
-    render :text => "こんにちわ世界"
+    @diaries = Diary.where(1)
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @diaries }
+    end
   end
+
 end

@@ -1,2 +1,13 @@
-<h1>Hellos#index</h1>
-<p>Find me in app/views/hellos/index.html.erb</p>
+
+
+<table>
+  <%= @diaries.each do |dia| %>
+    <tr>
+      <td><%= dia.title %></td>
+    </tr>
+
+    <tr>
+      <td><%= markdown(dia.text) %></td>
+    </tr>
+  <% end %>
+</table>

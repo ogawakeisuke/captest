@@ -31,3 +31,3272 @@ Migrating to CreateDiaries (20121116082254)
   [1m[35m (8.8ms)[0m  CREATE TABLE `diaries` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `text` text, `tag_id` int(11), `visibility` int(11), `state` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
   [1m[36m (2.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20121116082254')[0m
   [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-16 18:55:43 +0900
+Connecting to database specified by database.yml
+Processing by HellosController#index as HTML
+  Rendered hellos/index.html.erb within layouts/application (1.7ms)
+Compiled hellos.css  (9ms)  (pid 11238)
+Compiled application.css  (31ms)  (pid 11238)
+Compiled jquery.js  (3ms)  (pid 11238)
+Compiled jquery_ujs.js  (0ms)  (pid 11238)
+Compiled hellos.js  (88ms)  (pid 11238)
+Compiled application.js  (141ms)  (pid 11238)
+Completed 200 OK in 276ms (Views: 244.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 18:55:44 +0900
+Served asset /hellos.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 18:55:44 +0900
+Served asset /jquery.js - 200 OK (1ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 18:55:44 +0900
+Served asset /hellos.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 18:55:44 +0900
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 18:55:44 +0900
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 18:55:44 +0900
+Served asset /application.js - 200 OK (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-16 19:00:31 +0900
+Processing by HellosController#index as HTML
+  Rendered hellos/index.html.erb within layouts/application (0.0ms)
+Compiled admmin/diaries.css  (0ms)  (pid 11238)
+Compiled application.css  (25ms)  (pid 11238)
+Compiled admmin/diaries.js  (0ms)  (pid 11238)
+Compiled application.js  (8ms)  (pid 11238)
+Completed 200 OK in 92ms (Views: 89.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:00:31 +0900
+Served asset /admmin/diaries.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:00:32 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:00:32 +0900
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:00:32 +0900
+Served asset /admmin/diaries.js - 200 OK (1ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:00:32 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:00:32 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:00:32 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:00:32 +0900
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-16 19:01:18 +0900
+Processing by HellosController#index as HTML
+  Rendered hellos/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:01:18 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:01:18 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:01:18 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:01:18 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:01:18 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:01:18 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:01:18 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:01:18 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-11-16 19:01:21 +0900
+
+ActionController::RoutingError (uninitialized constant Admin):
+  activesupport (3.2.9) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.9) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.9) lib/active_support/inflector/methods.rb:229:in `constantize'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.9) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `_run__4456501611946536680__call__3739956417782605511__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/admin/index" for 127.0.0.1 at 2012-11-16 19:01:41 +0900
+
+ActionController::RoutingError (No route matches [GET] "/admin/index"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/admin/index" for 127.0.0.1 at 2012-11-16 19:02:11 +0900
+
+ActionController::RoutingError (No route matches [GET] "/admin/index"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-11-16 19:02:15 +0900
+
+ActionController::RoutingError (uninitialized constant Admin):
+  activesupport (3.2.9) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.9) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.9) lib/active_support/inflector/methods.rb:229:in `constantize'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.9) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `_run__4456501611946536680__call__3739956417782605511__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/admin/dialies" for 127.0.0.1 at 2012-11-16 19:02:47 +0900
+
+ActionController::RoutingError (No route matches [GET] "/admin/dialies"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-16 19:03:02 +0900
+Processing by HellosController#index as HTML
+  Rendered hellos/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:03:02 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:03:02 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:03:02 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:03:02 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:03:02 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:03:02 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:03:02 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:03:02 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/diaries" for 127.0.0.1 at 2012-11-16 19:03:09 +0900
+
+ActionController::RoutingError (uninitialized constant Admin):
+  activesupport (3.2.9) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.9) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.9) lib/active_support/inflector/methods.rb:229:in `constantize'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.9) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `_run__4456501611946536680__call__3739956417782605511__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-11-16 19:03:15 +0900
+
+ActionController::RoutingError (uninitialized constant Admin):
+  activesupport (3.2.9) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.9) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.9) lib/active_support/inflector/methods.rb:229:in `constantize'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.9) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `_run__4456501611946536680__call__3739956417782605511__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-11-16 19:03:37 +0900
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (uninitialized constant Admin):
+  activesupport (3.2.9) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.9) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.9) lib/active_support/inflector/methods.rb:229:in `constantize'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.9) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `_run__3831669713224425469__call__590105337024420020__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-11-16 19:04:59 +0900
+
+ActionController::RoutingError (uninitialized constant Admin):
+  activesupport (3.2.9) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.9) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.9) lib/active_support/inflector/methods.rb:229:in `constantize'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.9) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `_run__3831669713224425469__call__590105337024420020__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/admmin" for 127.0.0.1 at 2012-11-16 19:06:47 +0900
+Processing by Admmin::DiariesController#index as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admmin/dialies/edit" for 127.0.0.1 at 2012-11-16 19:07:47 +0900
+
+ActionController::RoutingError (No route matches [GET] "/admmin/dialies/edit"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/admmin/diaries/edit" for 127.0.0.1 at 2012-11-16 19:07:58 +0900
+
+AbstractController::ActionNotFound (The action 'show' could not be found for Admmin::DiariesController):
+  actionpack (3.2.9) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.9) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.9) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `_run__3831669713224425469__call__590105337024420020__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.3ms)
+
+
+Started GET "/admmin/diaries/show" for 127.0.0.1 at 2012-11-16 19:08:16 +0900
+
+AbstractController::ActionNotFound (The action 'show' could not be found for Admmin::DiariesController):
+  actionpack (3.2.9) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.9) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.9) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `_run__3831669713224425469__call__590105337024420020__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.3ms)
+
+
+Started GET "/admmin/diaries/show" for 127.0.0.1 at 2012-11-16 19:08:48 +0900
+Processing by Admmin::DiariesController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admmin/diaries/edit" for 127.0.0.1 at 2012-11-16 19:08:59 +0900
+Processing by Admmin::DiariesController#show as HTML
+  Parameters: {"id"=>"edit"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admmin/diaries/edit" for 127.0.0.1 at 2012-11-16 19:09:07 +0900
+Processing by Admmin::DiariesController#show as HTML
+  Parameters: {"id"=>"edit"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admmin/diaries/" for 127.0.0.1 at 2012-11-16 19:09:29 +0900
+Processing by Admmin::DiariesController#index as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admmin/diaries/" for 127.0.0.1 at 2012-11-16 19:16:41 +0900
+Processing by Admmin::DiariesController#index as HTML
+ERROR: compiling _app_views_admmin_diaries_index_html_erb___4531964903975478875_70220681431340 RAISED /Users/ogawa/Documents/captest/app/views/admmin/diaries/index.html.erb:8: syntax error, unexpected keyword_end
+  ');@output_buffer.append= ( end );@output_buffer.safe_concat('
+                                 ^
+/Users/ogawa/Documents/captest/app/views/admmin/diaries/index.html.erb:10: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/ogawa/Documents/captest/app/views/admmin/diaries/index.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+Function body:           def _app_views_admmin_diaries_index_html_erb___4531964903975478875_70220681431340(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "admmin/diaries/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>Admmin::Diaries#index</h1>
+<p>Find me in app/views/admmin/diaries/index.html.erb</p>
+
+<table>
+  ');@output_buffer.append=  @diaries.each do |dia| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('    <tr>');@output_buffer.append= (dia.title );@output_buffer.safe_concat('</tr>
+    <tr>');@output_buffer.append= (dia.text );@output_buffer.safe_concat('</tr>
+  ');@output_buffer.append= ( end );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</table>');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_view/template.rb:297:in `module_eval'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_view/template.rb:297:in `compile'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_view/template.rb:232:in `compile!'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_view/template.rb:144:in `block in render'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/activesupport-3.2.9/lib/active_support/notifications.rb:125:in `instrument'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_view/template.rb:143:in `render'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/activesupport-3.2.9/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/activesupport-3.2.9/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/activesupport-3.2.9/lib/active_support/notifications.rb:123:in `instrument'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/activesupport-3.2.9/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/activesupport-3.2.9/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/activerecord-3.2.9/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:414:in `_run__3305328651758098826__process_action__2316873754510414605__callbacks'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/activesupport-3.2.9/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/activesupport-3.2.9/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/activesupport-3.2.9/lib/active_support/notifications.rb:123:in `instrument'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/activerecord-3.2.9/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/abstract_controller/base.rb:121:in `process'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_controller/metal.rb:246:in `block in action'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/routing/route_set.rb:601:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/activerecord-3.2.9/lib/active_record/query_cache.rb:64:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/activerecord-3.2.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:405:in `_run__3831669713224425469__call__590105337024420020__callbacks'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/railties-3.2.9/lib/rails/rack/logger.rb:32:in `call_app'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/railties-3.2.9/lib/rails/rack/logger.rb:16:in `block in call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/activesupport-3.2.9/lib/active_support/tagged_logging.rb:22:in `tagged'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/railties-3.2.9/lib/rails/rack/logger.rb:16:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/activesupport-3.2.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/static.rb:62:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/railties-3.2.9/lib/rails/engine.rb:479:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/railties-3.2.9/lib/rails/application.rb:223:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/railties-3.2.9/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered admmin/diaries/index.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (/Users/ogawa/Documents/captest/app/views/admmin/diaries/index.html.erb:8: syntax error, unexpected keyword_end
+  ');@output_buffer.append= ( end );@output_buffer.safe_concat('
+                                 ^
+/Users/ogawa/Documents/captest/app/views/admmin/diaries/index.html.erb:10: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/ogawa/Documents/captest/app/views/admmin/diaries/index.html.erb:12: syntax error, unexpected keyword_end, expecting ')'):
+    5:   <%= @diaries.each do |dia| %>
+    6:     <tr><%=dia.title %></tr>
+    7:     <tr><%=dia.text %></tr>
+    8:   <%= end %>
+    9: </table>
+  actionpack (3.2.9) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.9) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.9) lib/action_view/template.rb:244:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (3.2.9) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.9) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.9) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.9) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.9) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.9) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.9) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.9) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.9) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.9) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.9) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.9) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.9) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.9) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.9) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.9) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.9) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.9) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.9) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.9) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.9) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.9) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:414:in `_run__3305328651758098826__process_action__2316873754510414605__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.9) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.9) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.9) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.9) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.9) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.9) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.9) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `_run__3831669713224425469__call__590105337024420020__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.3ms)
+
+
+Started GET "/admmin/diaries/" for 127.0.0.1 at 2012-11-16 19:16:56 +0900
+Processing by Admmin::DiariesController#index as HTML
+  [1m[36mDiary Load (6.0ms)[0m  [1mSELECT `diaries`.* FROM `diaries` WHERE `diaries`.`visibility` = 0[0m
+  Rendered admmin/diaries/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 44ms (Views: 34.1ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:16:56 +0900
+Served asset /application.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:16:56 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:16:56 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:16:56 +0900
+Served asset /hellos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:16:56 +0900
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:16:56 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:16:56 +0900
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:16:56 +0900
+Served asset /hellos.js - 304 Not Modified (1ms)
+
+
+Started GET "/admmin/diaries/" for 127.0.0.1 at 2012-11-16 19:22:20 +0900
+
+SyntaxError (/Users/ogawa/Documents/captest/app/controllers/admmin/diaries_controller.rb:76: syntax error, unexpected $end, expecting keyword_end
+  end
+     ^):
+  activesupport (3.2.9) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.9) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.9) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.9) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.9) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.9) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.9) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.9) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.9) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.9) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.9) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.9) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.9) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.9) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `_run__3831669713224425469__call__590105337024420020__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+
+
+Started GET "/admmin/diaries/" for 127.0.0.1 at 2012-11-16 19:23:00 +0900
+Processing by Admmin::DiariesController#index as HTML
+  [1m[35mDiary Load (0.2ms)[0m  SELECT `diaries`.* FROM `diaries` WHERE `diaries`.`visibility` = 0
+  Rendered admmin/diaries/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:23:00 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:23:00 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:23:00 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:23:00 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:23:00 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:23:00 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:23:00 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:23:00 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admmin/diaries/" for 127.0.0.1 at 2012-11-16 19:31:56 +0900
+Processing by Admmin::DiariesController#index as HTML
+  [1m[36mDiary Load (0.3ms)[0m  [1mSELECT `diaries`.* FROM `diaries` WHERE `diaries`.`visibility` = 0[0m
+  Rendered admmin/diaries/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:31:57 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:31:57 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:31:57 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:31:57 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:31:57 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:31:57 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:31:57 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:31:57 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:32:09 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/new.html.erb within layouts/application (14.4ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <h1>New dialy</h1>
+    2: 
+    3: <%= form_for @dialy,:url => {:action => :create} do |f| %>
+    4:   <% if @dialy.errors.any? %>
+    5:     <div id="error_explanation">
+    6:       <h2><%= pluralize(@dialy.errors.count, "error") %> prohibited this welcome from being saved:</h2>
+  app/views/admmin/diaries/new.html.erb:3:in `_app_views_admmin_diaries_new_html_erb___4402254997323675245_70220660715900'
+  app/controllers/admmin/diaries_controller.rb:21:in `new'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.2ms)
+
+
+Started GET "/admmin/diaries/" for 127.0.0.1 at 2012-11-16 19:34:09 +0900
+Processing by Admmin::DiariesController#index as HTML
+  [1m[35mDiary Load (0.3ms)[0m  SELECT `diaries`.* FROM `diaries` WHERE `diaries`.`visibility` = 0
+  Rendered admmin/diaries/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:34:09 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:34:09 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:34:09 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:34:09 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:34:09 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:34:09 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:34:09 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:34:09 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:34:10 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 29ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:34:10 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:34:10 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:34:10 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:34:10 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:34:10 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:34:10 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:34:10 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:34:10 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:34:58 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:34:58 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:34:58 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:34:58 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:34:58 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:34:58 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:34:58 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:34:59 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:34:59 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:35:47 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:35:47 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:35:47 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:35:47 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:35:47 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:35:47 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:35:47 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:35:47 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:35:47 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:35:48 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:35:48 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:35:48 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:35:48 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:35:48 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:35:48 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:35:48 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:35:48 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:35:48 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:36:13 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:36:13 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:36:13 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:36:13 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:36:13 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:36:13 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:36:13 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:36:13 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:36:13 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:36:14 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:36:14 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:36:14 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:36:14 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:36:14 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:36:14 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:36:14 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:36:14 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:36:14 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:38:19 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:38:20 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:38:20 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:38:20 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:38:20 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:38:20 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:38:20 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:38:20 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:38:20 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:38:21 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:38:21 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:38:21 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:38:21 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:38:21 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:38:21 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:38:21 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:38:21 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:38:21 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admmin/diaries/" for 127.0.0.1 at 2012-11-16 19:38:23 +0900
+Processing by Admmin::DiariesController#index as HTML
+  [1m[36mDiary Load (0.3ms)[0m  [1mSELECT `diaries`.* FROM `diaries` WHERE `diaries`.`visibility` = 0[0m
+  Rendered admmin/diaries/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:38:23 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:38:23 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:38:23 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:38:23 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:38:23 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:38:23 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:38:23 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:38:23 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:38:24 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:38:24 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:38:24 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:38:24 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:38:24 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:38:24 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:38:24 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:38:24 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:39:27 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:39:27 +0900
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:39:27 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:39:27 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:39:27 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:39:27 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:39:27 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:39:27 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:39:27 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:40:37 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:40:37 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:40:37 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:40:37 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:40:37 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:40:37 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:40:37 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:40:37 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:40:37 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:40:58 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/new.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (':form' is not an ActiveModel-compatible object that returns a valid partial path.):
+    1: <h1>New diary</h1>
+    2: 
+    3: <%render :form %>
+    4: 
+    5: 
+    6: <%= link_to 'Back', :action =>"index" %>
+  app/views/admmin/diaries/new.html.erb:3:in `_app_views_admmin_diaries_new_html_erb___4402254997323675245_70220662149380'
+  app/controllers/admmin/diaries_controller.rb:21:in `new'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.3ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:41:28 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/_form.html.erb (5.5ms)
+  Rendered admmin/diaries/new.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `diaries_path' for #<#<Class:0x007fbb0d90fe00>:0x007fbb0d901a58>):
+    1: <%= form_for(@diary) do |f| %>
+    2:   <% if @diary.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@diary.errors.count, "error") %> prohibited this welcome from being saved:</h2>
+  app/views/admmin/diaries/_form.html.erb:1:in `_app_views_admmin_diaries__form_html_erb__3964694773669571551_70220681560200'
+  app/views/admmin/diaries/new.html.erb:3:in `_app_views_admmin_diaries_new_html_erb___4402254997323675245_70220681577100'
+  app/controllers/admmin/diaries_controller.rb:21:in `new'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.0ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:42:01 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/_form.html.erb (6.0ms)
+  Rendered admmin/diaries/new.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `diaries_path' for #<#<Class:0x007fbb0d90fe00>:0x007fbb0d81e820>):
+    1: 
+    2: <%= form_for(@diary) do |f| %>
+    3:   <% if @diary.errors.any? %>
+    4:     <div id="error_explanation">
+    5:       <h2><%= pluralize(@diary.errors.count, "error") %> prohibited this welcome from being saved:</h2>
+  app/views/admmin/diaries/_form.html.erb:2:in `_app_views_admmin_diaries__form_html_erb__3964694773669571551_70220681100020'
+  app/views/admmin/diaries/new.html.erb:3:in `_app_views_admmin_diaries_new_html_erb___4402254997323675245_70220681577100'
+  app/controllers/admmin/diaries_controller.rb:21:in `new'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (14.8ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.0ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:43:31 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/_form.html.erb (6.0ms)
+  Rendered admmin/diaries/new.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `diaries_path' for #<#<Class:0x007fbb0d90fe00>:0x007fbb0d91ee00>):
+    1: <%= form_for(@diary) do |f| %>
+    2:   <% if @diary.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@diary.errors.count, "error") %> prohibited this welcome from being saved:</h2>
+  app/views/admmin/diaries/_form.html.erb:1:in `_app_views_admmin_diaries__form_html_erb__3964694773669571551_70220681615380'
+  app/views/admmin/diaries/new.html.erb:16:in `block in _app_views_admmin_diaries_new_html_erb___4402254997323675245_70220681637220'
+  app/views/admmin/diaries/new.html.erb:3:in `_app_views_admmin_diaries_new_html_erb___4402254997323675245_70220681637220'
+  app/controllers/admmin/diaries_controller.rb:21:in `new'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.7ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:43:49 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:43:49 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:43:49 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:43:49 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:43:49 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:43:49 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:43:49 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:43:49 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:43:49 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:44:35 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/_form.html.erb (9.4ms)
+  Rendered admmin/diaries/new.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined method `diaries_path' for #<#<Class:0x007fbb0d90fe00>:0x007fbb0d8cdd20>):
+    1: <%= form_for(@diary) do |f| %>
+    2:   <% if @diary.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@diary.errors.count, "error") %> prohibited this welcome from being saved:</h2>
+  app/views/admmin/diaries/_form.html.erb:1:in `_app_views_admmin_diaries__form_html_erb__3964694773669571551_70220681449620'
+  app/views/admmin/diaries/new.html.erb:16:in `block in _app_views_admmin_diaries_new_html_erb___4402254997323675245_70220681471160'
+  app/views/admmin/diaries/new.html.erb:3:in `_app_views_admmin_diaries_new_html_erb___4402254997323675245_70220681471160'
+  app/controllers/admmin/diaries_controller.rb:21:in `new'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.6ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:45:08 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/_form.html.erb (1.8ms)
+  Rendered admmin/diaries/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:45:08 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:45:08 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:45:08 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:45:08 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:45:08 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:45:08 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:45:08 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:45:08 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:45:25 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/_form.html.erb (5.0ms)
+  Rendered admmin/diaries/new.html.erb within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007fbb0d90fe00>:0x007fbb0d86b300>):
+    1:   <div class="field">
+    2:     <%= f.label :title %><br />
+    3:     <%= f.text_field :title %>
+    4:   </div>
+    5:   <div class="field">
+  app/views/admmin/diaries/_form.html.erb:2:in `_app_views_admmin_diaries__form_html_erb__3964694773669571551_70220681246340'
+  app/views/admmin/diaries/new.html.erb:16:in `block in _app_views_admmin_diaries_new_html_erb___4402254997323675245_70220681269000'
+  app/views/admmin/diaries/new.html.erb:3:in `_app_views_admmin_diaries_new_html_erb___4402254997323675245_70220681269000'
+  app/controllers/admmin/diaries_controller.rb:21:in `new'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.0ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:45:54 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/_form.html.erb (15.4ms)
+  Rendered admmin/diaries/new.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 21ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:45:54 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:45:54 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:45:54 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:45:54 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:45:54 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:45:54 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:45:54 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:45:54 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:46:01 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/_form.html.erb (1.7ms)
+  Rendered admmin/diaries/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:46:01 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:46:01 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:46:01 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:46:01 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:46:01 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:46:01 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:46:01 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:46:01 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:47:03 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/_form.html.erb (1.8ms)
+  Rendered admmin/diaries/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:47:03 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:47:03 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:47:03 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:47:03 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:47:03 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:47:03 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:47:03 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:47:03 +0900
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:47:28 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/_form.html.erb (1.7ms)
+  Rendered admmin/diaries/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:47:28 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:47:28 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:47:28 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:47:28 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:47:28 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:47:28 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:47:28 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:47:28 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:48:20 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/_form.html.erb (1.8ms)
+  Rendered admmin/diaries/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:48:20 +0900
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:48:20 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:48:20 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:48:20 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:48:20 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:48:20 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:48:20 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:48:20 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/admmin/diaries" for 127.0.0.1 at 2012-11-16 19:53:24 +0900
+
+ActionController::RoutingError (uninitialized constant Diary::Visible):
+  app/models/diary.rb:4:in `<class:Diary>'
+  app/models/diary.rb:1:in `<top (required)>'
+  app/controllers/admmin/diaries_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/admmin/diaries" for 127.0.0.1 at 2012-11-16 19:54:50 +0900
+
+ActionController::RoutingError (uninitialized constant Diary::Visible):
+  app/models/diary.rb:4:in `<class:Diary>'
+  app/models/diary.rb:1:in `<top (required)>'
+  app/controllers/admmin/diaries_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:55:07 +0900
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (uninitialized constant Diary::Visible):
+  app/models/diary.rb:4:in `<class:Diary>'
+  app/models/diary.rb:1:in `<top (required)>'
+  app/controllers/admmin/diaries_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/admmin/diaries/" for 127.0.0.1 at 2012-11-16 19:55:11 +0900
+
+NoMethodError (undefined method `key?' for nil:NilClass):
+  actionpack (3.2.9) lib/action_controller/metal/hide_actions.rb:36:in `visible_action?'
+  actionpack (3.2.9) lib/action_controller/metal/hide_actions.rb:18:in `method_for_action'
+  actionpack (3.2.9) lib/action_controller/metal/implicit_render.rb:14:in `method_for_action'
+  actionpack (3.2.9) lib/action_controller/metal/compatibility.rb:61:in `method_for_action'
+  actionpack (3.2.9) lib/abstract_controller/base.rb:115:in `process'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.9) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.9) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `_run__349845734397386279__call__1986497675927527802__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.6ms)
+
+
+Started GET "/admmin/diaries/edit" for 127.0.0.1 at 2012-11-16 19:55:18 +0900
+
+NoMethodError (undefined method `key?' for nil:NilClass):
+  actionpack (3.2.9) lib/action_controller/metal/hide_actions.rb:36:in `visible_action?'
+  actionpack (3.2.9) lib/action_controller/metal/hide_actions.rb:18:in `method_for_action'
+  actionpack (3.2.9) lib/action_controller/metal/implicit_render.rb:14:in `method_for_action'
+  actionpack (3.2.9) lib/action_controller/metal/compatibility.rb:61:in `method_for_action'
+  actionpack (3.2.9) lib/abstract_controller/base.rb:115:in `process'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.9) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.9) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `_run__349845734397386279__call__1986497675927527802__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.7ms)
+
+
+Started GET "/admmin/" for 127.0.0.1 at 2012-11-16 19:55:26 +0900
+
+NoMethodError (undefined method `key?' for nil:NilClass):
+  actionpack (3.2.9) lib/action_controller/metal/hide_actions.rb:36:in `visible_action?'
+  actionpack (3.2.9) lib/action_controller/metal/hide_actions.rb:18:in `method_for_action'
+  actionpack (3.2.9) lib/action_controller/metal/implicit_render.rb:14:in `method_for_action'
+  actionpack (3.2.9) lib/action_controller/metal/compatibility.rb:61:in `method_for_action'
+  actionpack (3.2.9) lib/abstract_controller/base.rb:115:in `process'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.9) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.9) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `_run__349845734397386279__call__1986497675927527802__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.4ms)
+
+
+Started GET "/admmin/" for 127.0.0.1 at 2012-11-16 19:55:35 +0900
+
+NoMethodError (undefined method `key?' for nil:NilClass):
+  actionpack (3.2.9) lib/action_controller/metal/hide_actions.rb:36:in `visible_action?'
+  actionpack (3.2.9) lib/action_controller/metal/hide_actions.rb:18:in `method_for_action'
+  actionpack (3.2.9) lib/action_controller/metal/implicit_render.rb:14:in `method_for_action'
+  actionpack (3.2.9) lib/action_controller/metal/compatibility.rb:61:in `method_for_action'
+  actionpack (3.2.9) lib/abstract_controller/base.rb:115:in `process'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.9) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.9) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `_run__349845734397386279__call__1986497675927527802__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.8ms)
+
+
+Started GET "/admmin/" for 127.0.0.1 at 2012-11-16 19:56:32 +0900
+
+ActionController::RoutingError (uninitialized constant Diary::Visible):
+  app/models/diary.rb:4:in `<class:Diary>'
+  app/models/diary.rb:1:in `<top (required)>'
+  app/controllers/admmin/diaries_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/admmin/" for 127.0.0.1 at 2012-11-16 19:56:42 +0900
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (uninitialized constant Diary::Visible):
+  app/models/diary.rb:4:in `<class:Diary>'
+  app/models/diary.rb:1:in `<top (required)>'
+  app/controllers/admmin/diaries_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/admmin/" for 127.0.0.1 at 2012-11-16 19:56:47 +0900
+
+NoMethodError (undefined method `key?' for nil:NilClass):
+  actionpack (3.2.9) lib/action_controller/metal/hide_actions.rb:36:in `visible_action?'
+  actionpack (3.2.9) lib/action_controller/metal/hide_actions.rb:18:in `method_for_action'
+  actionpack (3.2.9) lib/action_controller/metal/implicit_render.rb:14:in `method_for_action'
+  actionpack (3.2.9) lib/action_controller/metal/compatibility.rb:61:in `method_for_action'
+  actionpack (3.2.9) lib/abstract_controller/base.rb:115:in `process'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.9) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.9) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `_run__2227647188144278647__call__10873114106389371__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.9ms)
+
+
+Started GET "/admmin/" for 127.0.0.1 at 2012-11-16 19:57:20 +0900
+Processing by Admmin::DiariesController#index as HTML
+  [1m[36mDiary Load (0.3ms)[0m  [1mSELECT `diaries`.* FROM `diaries` WHERE `diaries`.`visibility` = 1[0m
+  Rendered admmin/diaries/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 51ms (Views: 47.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:57:20 +0900
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:57:20 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:57:20 +0900
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:57:20 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:57:20 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:57:20 +0900
+Served asset /hellos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:57:20 +0900
+Served asset /hellos.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:57:20 +0900
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/admmin/diaries/new" for 127.0.0.1 at 2012-11-16 19:57:23 +0900
+Processing by Admmin::DiariesController#new as HTML
+  Rendered admmin/diaries/_form.html.erb (7.7ms)
+  Rendered admmin/diaries/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 23ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:57:23 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:57:23 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:57:23 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:57:23 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:57:23 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:57:23 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:57:23 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:57:23 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/admmin/diaries" for 127.0.0.1 at 2012-11-16 19:58:05 +0900
+Processing by Admmin::DiariesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9m5Xqa12yc9VosqO7uyyzERVTcDywhqWL7ghjkxqdEg=", "diary"=>{"title"=>"パスブックまとめ", "text"=>"#パスブックまとめ\r\n###10/9\r\n####パスブックでなんかしたい、というお題がふってきたので即ブレスト。\r\n\r\n- わらしべメソッド\r\n    - 複数のレストランに決められた時間に決められた順に行くと、次の店で割引出来る券が貰える。\r\n- ゲーム連携\r\n     - RPGのゲーム内通貨と連動してクーポン生成,RMT?\r\n- クーポンでない使い方\r\n     - インタラクションのキーとして\r\n     - 現地のブツを使う(ソフトクリーム生成)\r\n\r\nいろいろ出た。\r\nモチーフとしては上々。実世界でのサービスなのにリアルスペースインタラクションはあまり浮かばない。データが実世界に及ぼす奇妙な関係が楽しいのかもしれない。\r\n\r\n\r\n###10/14\r\n- 状態が変わるクーポン　＝＞unknownなクーポン\r\n  - 状態が変わったり、よくわからないからピッとするまで価値がわからない\r\n\r\n- unknownなもの\r\n  - 白紙クーポン(何も書いていない)\r\n- カメラクーポン(カメラで写真にとってサーバーにおくり、画像解析の後、例えば魚だったら魚半額とか)\r\n- 加速度クーポン(振った数だけ安くなる)\r\n- 合成クーポン（とあるクーポンと合成してよりお得なクーポンに）\r\n- インフレクーポン(100億ジンバブエドル値引き！とか書かれている)\r\n- わらしべクーポン(複数のレストランに決められた時間に決められた順に行くと、次の店で割引出来る券が貰える)\r\n\r\n\r\n\r\n###10/16\r\n#####今回はプランニングチームの今後の実験のために、いくつかの取り決めを設けて打ち合わせに参加した。\r\nユニバのパワーを活かすために、**「３つのミッション」**を常に考慮しながら話を決めて行くというものだ。\r\n\r\n僕の中ではこの__「３つのミッション」__が「３つのニーズ」だったり「３つのオーダー」だったりとはっきりとしない。  \r\nとにかく、「大丈夫、すべてがうまくいく」を目指すために３つのことを考えなければいけない。なぜ３つなのか？ternaryの関係性を見出すと__バランス__がとりやすいと思ったからだ。バランスと関係性をすごくすごく考えていろいろ提案したり、折り合わせをつけたりするのがプランニングの最低限のミッションだと考えている。\r\n\r\n####☆ユニバミッション\r\n    - 電◯にアピールする\r\n      - 俺たちのテクニカルディレクション力を見せる\r\n      - スキルが見いだすアイデアを大事にしてる\r\n      - みんなの知らない事を知っている\r\n      - 流行ものに敏感だ\r\n\r\n####☆顧客ミッション(仮説)\r\n    -ベンチャーのアイデアを安く買いたい！\r\n    -テレビの時代が終わったのは認める、次の何かを探さないと突然の死\r\n    -まったく新しい広告作戦をいち早くやりたい\r\n\r\n####☆テクノロジーミッション\r\n    -価値は変動する\r\n    -価値は動的に定義し呼び出せるし、関数の比喩になってしまう\r\n    -使うひとが価値を決めるという恐ろしい時代の幕を明けようぜ！\r\n\r\n\r\n話し合いのときにこのミッションの話はださなかった。もっと不完全な考えだった。\r\nしかしこのミッションについて慎重になりながら話し合いに参加する。\r\nその上で、カメラクーポンがネタとして良いバランスなのでは無いかと考え推してみる。\r\n  \r\n  \r\n\r\n###10/23\r\n  \r\n##顔パス  \r\n    顔passって？\r\n      - 顔passは顔写真を撮ったら、それがpassbookとして発行されるwebサイト(webアプリケーション)\r\n      - 顔の特徴を解析し、解析に応じて価値が変動する。\r\n          -イケ面割(特徴点が平均なら美形らしい)\r\n          -メガネ割(メガネを割り出す)\r\n          -ギャル割(髪の毛？茶髪？など割り出す)\r\n\r\n動的にクーポンを生成する、顔写真とるまで価値が決定しない、ユーザが自身で価値を決定する、といった__☆テクノロジーミッション__のポイントのいくつかを拾うことは絶対だった。  \r\nあとはユニバミッション。とても早いスピードで実装作業は続けられた。この一連の流れからテクニカルディレクション力をアピールできるのだろうか。  \r\n顧客ミッションと照らし合わせると、この「いい線いっていて、あと一歩」というのは手を組みたくなるチャーミングポイントなのでは？と正当化した。  \r\n\r\n###10/31\r\n当日発表を終えて\r\n\r\n- すごいねといってもらえたらしい。\r\n- ふーん、てなったらしい。\r\n- これメロディ変えられるの？(当日版はアプリの動作に応じて鉄琴が鳴った！)\r\n- 神風動画がすごすぎた(あれ？)\r\n\r\n担当者様からのありがたいお言葉もいただいた。  \r\n\r\n\t「いくつか私の方でユニバさんの◯◯に関して問い合わせも◯◯おりますが、全体的に大変◯◯で興味を持った人間も多く、今後とも◯◯からユニバ様にお願いさせていただく◯◯が◯◯するのではと思っております。引き続き◯◯。」\r\n\r\n\r\n###11/5  \r\n1. とても満足いくイベントと成ったそうで良かった。\r\n2. でも手応えはそんなに無い。それでいいとも思う。\r\n\r\n#####今後はまず、３つのミッションを最初に掲げて考えを展開していきたい。\r\n \r\n  \r\n他には、ユニバ内のモチベーションの齟齬について考えてみる。  \r\n\r\n\t内容と表現は違う\r\n     -「こういうものなんです」「こういうものを表そうとしてるんです」\r\n     -わかりやすさについて\r\n  \r\n\tメッセージとメディアは違う\r\n     -メディアって言葉について考え出すと気が狂いそうになる\r\n     -「リアル」を併せて考えるとすこし発狂から抜け出せる     \r\n\r\n", "visibility"=>"1"}, "commit"=>"Create Diary"}
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO `diaries` (`created_at`, `state`, `tag_id`, `text`, `title`, `updated_at`, `visibility`) VALUES ('2012-11-16 10:58:05', NULL, NULL, '#パスブックまとめ\r\n###10/9\r\n####パスブックでなんかしたい、というお題がふってきたので即ブレスト。\r\n\r\n- わらしべメソッド\r\n - 複数のレストランに決められた時間に決められた順に行くと、次の店で割引出来る券が貰える。\r\n- ゲーム連携\r\n - RPGのゲーム内通貨と連動してクーポン生成,RMT?\r\n- クーポンでない使い方\r\n - インタラクションのキーとして\r\n - 現地のブツを使う(ソフトクリーム生成)\r\n\r\nいろいろ出た。\r\nモチーフとしては上々。実世界でのサービスなのにリアルスペースインタラクションはあまり浮かばない。データが実世界に及ぼす奇妙な関係が楽しいのかもしれない。\r\n\r\n\r\n###10/14\r\n- 状態が変わるクーポン　＝＞unknownなクーポン\r\n - 状態が変わったり、よくわからないからピッとするまで価値がわからない\r\n\r\n- unknownなもの\r\n - 白紙クーポン(何も書いていない)\r\n- カメラクーポン(カメラで写真にとってサーバーにおくり、画像解析の後、例えば魚だったら魚半額とか)\r\n- 加速度クーポン(振った数だけ安くなる)\r\n- 合成クーポン（とあるクーポンと合成してよりお得なクーポンに）\r\n- インフレクーポン(100億ジンバブエドル値引き！とか書かれている)\r\n- わらしべクーポン(複数のレストランに決められた時間に決められた順に行くと、次の店で割引出来る券が貰える)\r\n\r\n\r\n\r\n###10/16\r\n#####今回はプランニングチームの今後の実験のために、いくつかの取り決めを設けて打ち合わせに参加した。\r\nユニバのパワーを活かすために、**「３つのミッション」**を常に考慮しながら話を決めて行くというものだ。\r\n\r\n僕の中ではこの__「３つのミッション」__が「３つのニーズ」だったり「３つのオーダー」だったりとはっきりとしない。 \r\nとにかく、「大丈夫、すべてがうまくいく」を目指すために３つのことを考えなければいけない。なぜ３つなのか？ternaryの関係性を見出すと__バランス__がとりやすいと思ったからだ。バランスと関係性をすごくすごく考えていろいろ提案したり、折り合わせをつけたりするのがプランニングの最低限のミッションだと考えている。\r\n\r\n####☆ユニバミッション\r\n - 電◯にアピールする\r\n - 俺たちのテクニカルディレクション力を見せる\r\n - スキルが見いだすアイデアを大事にしてる\r\n - みんなの知らない事を知っている\r\n - 流行ものに敏感だ\r\n\r\n####☆顧客ミッション(仮説)\r\n -ベンチャーのアイデアを安く買いたい！\r\n -テレビの時代が終わったのは認める、次の何かを探さないと突然の死\r\n -まったく新しい広告作戦をいち早くやりたい\r\n\r\n####☆テクノロジーミッション\r\n -価値は変動する\r\n -価値は動的に定義し呼び出せるし、関数の比喩になってしまう\r\n -使うひとが価値を決めるという恐ろしい時代の幕を明けようぜ！\r\n\r\n\r\n話し合いのときにこのミッションの話はださなかった。もっと不完全な考えだった。\r\nしかしこのミッションについて慎重になりながら話し合いに参加する。\r\nその上で、カメラクーポンがネタとして良いバランスなのでは無いかと考え推してみる。\r\n \r\n \r\n\r\n###10/23\r\n \r\n##顔パス \r\n 顔passって？\r\n - 顔passは顔写真を撮ったら、それがpassbookとして発行されるwebサイト(webアプリケーション)\r\n - 顔の特徴を解析し、解析に応じて価値が変動する。\r\n -イケ面割(特徴点が平均なら美形らしい)\r\n -メガネ割(メガネを割り出す)\r\n -ギャル割(髪の毛？茶髪？など割り出す)\r\n\r\n動的にクーポンを生成する、顔写真とるまで価値が決定しない、ユーザが自身で価値を決定する、といった__☆テクノロジーミッション__のポイントのいくつかを拾うことは絶対だった。 \r\nあとはユニバミッション。とても早いスピードで実装作業は続けられた。この一連の流れからテクニカルディレクション力をアピールできるのだろうか。 \r\n顧客ミッションと照らし合わせると、この「いい線いっていて、あと一歩」というのは手を組みたくなるチャーミングポイントなのでは？と正当化した。 \r\n\r\n###10/31\r\n当日発表を終えて\r\n\r\n- すごいねといってもらえたらしい。\r\n- ふーん、てなったらしい。\r\n- これメロディ変えられるの？(当日版はアプリの動作に応じて鉄琴が鳴った！)\r\n- 神風動画がすごすぎた(あれ？)\r\n\r\n担当者様からのありがたいお言葉もいただいた。 \r\n\r\n	「いくつか私の方でユニバさんの◯◯に関して問い合わせも◯◯おりますが、全体的に大変◯◯で興味を持った人間も多く、今後とも◯◯からユニバ様にお願いさせていただく◯◯が◯◯するのではと思っております。引き続き◯◯。」\r\n\r\n\r\n###11/5 \r\n1. とても満足いくイベントと成ったそうで良かった。\r\n2. でも手応えはそんなに無い。それでいいとも思う。\r\n\r\n#####今後はまず、３つのミッションを最初に掲げて考えを展開していきたい。\r\n \r\n \r\n他には、ユニバ内のモチベーションの齟齬について考えてみる。 \r\n\r\n	内容と表現は違う\r\n -「こういうものなんです」「こういうものを表そうとしてるんです」\r\n -わかりやすさについて\r\n \r\n	メッセージとメディアは違う\r\n -メディアって言葉について考え出すと気が狂いそうになる\r\n -「リアル」を併せて考えるとすこし発狂から抜け出せる \r\n\r\n', 'パスブックまとめ', '2012-11-16 10:58:05', 1)[0m
+  [1m[35m (0.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/admmin?notice=Diary+was+successfully+created.
+Completed 302 Found in 12ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/admmin?notice=Diary+was+successfully+created." for 127.0.0.1 at 2012-11-16 19:58:05 +0900
+Processing by Admmin::DiariesController#index as HTML
+  Parameters: {"notice"=>"Diary was successfully created."}
+  [1m[36mDiary Load (0.6ms)[0m  [1mSELECT `diaries`.* FROM `diaries` WHERE `diaries`.`visibility` = 1[0m
+  Rendered admmin/diaries/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:58:05 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:58:05 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:58:05 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:58:05 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:58:05 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:58:05 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:58:05 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:58:05 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admmin?notice=Diary+was+successfully+created." for 127.0.0.1 at 2012-11-16 19:58:36 +0900
+Processing by Admmin::DiariesController#index as HTML
+  Parameters: {"notice"=>"Diary was successfully created."}
+  [1m[35mDiary Load (0.2ms)[0m  SELECT `diaries`.* FROM `diaries` WHERE `diaries`.`visibility` = 1
+  Rendered admmin/diaries/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:58:36 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:58:36 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:58:36 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:58:36 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:58:36 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:58:36 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:58:36 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:58:36 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admmin?notice=Diary+was+successfully+created." for 127.0.0.1 at 2012-11-16 19:58:38 +0900
+Processing by Admmin::DiariesController#index as HTML
+  Parameters: {"notice"=>"Diary was successfully created."}
+  [1m[36mDiary Load (0.3ms)[0m  [1mSELECT `diaries`.* FROM `diaries` WHERE `diaries`.`visibility` = 1[0m
+  Rendered admmin/diaries/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:58:38 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:58:38 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:58:38 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:58:38 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:58:38 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:58:38 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:58:38 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:58:38 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admmin?notice=Diary+was+successfully+created." for 127.0.0.1 at 2012-11-16 19:59:20 +0900
+Processing by Admmin::DiariesController#index as HTML
+  Parameters: {"notice"=>"Diary was successfully created."}
+  [1m[35mDiary Load (0.3ms)[0m  SELECT `diaries`.* FROM `diaries` WHERE `diaries`.`visibility` = 1
+  Rendered admmin/diaries/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 19:59:20 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 19:59:20 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 19:59:20 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 19:59:20 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 19:59:20 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 19:59:20 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 19:59:20 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 19:59:20 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/home/1" for 127.0.0.1 at 2012-11-16 19:59:26 +0900
+
+ActionController::RoutingError (No route matches [GET] "/home/1"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ogawa/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/admmin?notice=Diary+was+successfully+created." for 127.0.0.1 at 2012-11-16 20:00:02 +0900
+Processing by Admmin::DiariesController#index as HTML
+  Parameters: {"notice"=>"Diary was successfully created."}
+  [1m[36mDiary Load (0.3ms)[0m  [1mSELECT `diaries`.* FROM `diaries` WHERE `diaries`.`visibility` = 1[0m
+  Rendered admmin/diaries/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 20:00:02 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 20:00:02 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 20:00:02 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 20:00:02 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 20:00:02 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 20:00:02 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 20:00:02 +0900
+Served asset /hellos.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 20:00:02 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admmin/diaries/1" for 127.0.0.1 at 2012-11-16 20:00:04 +0900
+Processing by Admmin::DiariesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mDiary Load (0.7ms)[0m  SELECT `diaries`.* FROM `diaries` WHERE `diaries`.`id` = 1 LIMIT 1
+  Rendered admmin/diaries/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 20:00:04 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 20:00:04 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 20:00:04 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 20:00:04 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 20:00:04 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 20:00:04 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 20:00:04 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 20:00:04 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admmin/diaries/1/edit" for 127.0.0.1 at 2012-11-16 20:00:47 +0900
+Processing by Admmin::DiariesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDiary Load (0.3ms)[0m  [1mSELECT `diaries`.* FROM `diaries` WHERE `diaries`.`id` = 1 LIMIT 1[0m
+  Rendered admmin/diaries/_form.html.erb (1.4ms)
+  Rendered admmin/diaries/edit.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 20:00:47 +0900
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 20:00:47 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 20:00:47 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 20:00:47 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 20:00:47 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 20:00:47 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 20:00:47 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 20:00:47 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-16 20:07:07 +0900
+Processing by HellosController#index as HTML
+  Rendered hellos/index.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    2: 
+    3: <table>
+    4:   <tr>
+    5:     <td><%= @diaries.title %></td>
+    6:   </tr>
+    7: 
+    8:   <tr>
+  app/views/hellos/index.html.erb:5:in `_app_views_hellos_index_html_erb__4319029845790881098_70120023741560'
+  app/controllers/hellos_controller.rb:7:in `index'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-16 20:07:43 +0900
+Processing by HellosController#index as HTML
+  [1m[35mDiary Load (0.2ms)[0m  SELECT `diaries`.* FROM `diaries` WHERE (1)
+  Rendered hellos/index.html.erb within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined method `title' for #<ActiveRecord::Relation:0x007f8c2e419f58>):
+    2: 
+    3: <table>
+    4:   <tr>
+    5:     <td><%= @diaries.title %></td>
+    6:   </tr>
+    7: 
+    8:   <tr>
+  app/views/hellos/index.html.erb:5:in `_app_views_hellos_index_html_erb__4319029845790881098_70120023741560'
+  app/controllers/hellos_controller.rb:7:in `index'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-16 20:08:50 +0900
+Processing by HellosController#index as HTML
+  [1m[36mDiary Load (0.3ms)[0m  [1mSELECT `diaries`.* FROM `diaries` WHERE (1)[0m
+  Rendered hellos/index.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `new' for Redcarpet:Module):
+    7:     </tr>
+    8: 
+    9:     <tr>
+    10:       <td><%= markdown(dia.text) %></td>
+    11:     </tr>
+    12:   <% end %>
+    13: </table>
+  app/helpers/application_helper.rb:9:in `markdown'
+  app/views/hellos/index.html.erb:10:in `block in _app_views_hellos_index_html_erb__4319029845790881098_70120004201520'
+  app/views/hellos/index.html.erb:4:in `_app_views_hellos_index_html_erb__4319029845790881098_70120004201520'
+  app/controllers/hellos_controller.rb:7:in `index'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-16 20:13:19 +0900
+Processing by HellosController#index as HTML
+  [1m[35mDiary Load (0.3ms)[0m  SELECT `diaries`.* FROM `diaries` WHERE (1)
+  Rendered hellos/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `new' for Redcarpet:Module):
+    7:     </tr>
+    8: 
+    9:     <tr>
+    10:       <td><%= markdown(dia.text) %></td>
+    11:     </tr>
+    12:   <% end %>
+    13: </table>
+  app/helpers/application_helper.rb:9:in `markdown'
+  app/views/hellos/index.html.erb:10:in `block in _app_views_hellos_index_html_erb__4319029845790881098_70120024159440'
+  app/views/hellos/index.html.erb:4:in `_app_views_hellos_index_html_erb__4319029845790881098_70120024159440'
+  app/controllers/hellos_controller.rb:7:in `index'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-16 20:13:20 +0900
+Processing by HellosController#index as HTML
+  [1m[36mDiary Load (0.3ms)[0m  [1mSELECT `diaries`.* FROM `diaries` WHERE (1)[0m
+  Rendered hellos/index.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `new' for Redcarpet:Module):
+    7:     </tr>
+    8: 
+    9:     <tr>
+    10:       <td><%= markdown(dia.text) %></td>
+    11:     </tr>
+    12:   <% end %>
+    13: </table>
+  app/helpers/application_helper.rb:9:in `markdown'
+  app/views/hellos/index.html.erb:10:in `block in _app_views_hellos_index_html_erb__4319029845790881098_70120024159440'
+  app/views/hellos/index.html.erb:4:in `_app_views_hellos_index_html_erb__4319029845790881098_70120024159440'
+  app/controllers/hellos_controller.rb:7:in `index'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (14.6ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-16 20:16:04 +0900
+Processing by HellosController#index as HTML
+  [1m[35mDiary Load (0.2ms)[0m  SELECT `diaries`.* FROM `diaries` WHERE (1)
+  Rendered hellos/index.html.erb within layouts/application (9.8ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (uninitialized constant ApplicationHelper::Markdown):
+    7:     </tr>
+    8: 
+    9:     <tr>
+    10:       <td><%= markdown(dia.text) %></td>
+    11:     </tr>
+    12:   <% end %>
+    13: </table>
+  app/helpers/application_helper.rb:9:in `markdown'
+  app/views/hellos/index.html.erb:10:in `block in _app_views_hellos_index_html_erb__4319029845790881098_70120024159440'
+  app/views/hellos/index.html.erb:4:in `_app_views_hellos_index_html_erb__4319029845790881098_70120024159440'
+  app/controllers/hellos_controller.rb:7:in `index'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-16 20:18:50 +0900
+Processing by HellosController#index as HTML
+  [1m[36mDiary Load (0.3ms)[0m  [1mSELECT `diaries`.* FROM `diaries` WHERE (1)[0m
+  Rendered hellos/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (uninitialized constant ApplicationHelper::Markdown):
+    7:     </tr>
+    8: 
+    9:     <tr>
+    10:       <td><%= markdown(dia.text) %></td>
+    11:     </tr>
+    12:   <% end %>
+    13: </table>
+  app/helpers/application_helper.rb:9:in `markdown'
+  app/views/hellos/index.html.erb:10:in `block in _app_views_hellos_index_html_erb__4319029845790881098_70120024159440'
+  app/views/hellos/index.html.erb:4:in `_app_views_hellos_index_html_erb__4319029845790881098_70120024159440'
+  app/controllers/hellos_controller.rb:7:in `index'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-16 20:21:17 +0900
+Processing by HellosController#index as HTML
+  [1m[35mDiary Load (0.2ms)[0m  SELECT `diaries`.* FROM `diaries` WHERE (1)
+  Rendered hellos/index.html.erb within layouts/application (9.7ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `content' for #<String:0x007f8c2e3b7290>):
+    7:     </tr>
+    8: 
+    9:     <tr>
+    10:       <td><%= markdown(dia.text) %></td>
+    11:     </tr>
+    12:   <% end %>
+    13: </table>
+  app/helpers/application_helper.rb:12:in `markdown'
+  app/views/hellos/index.html.erb:10:in `block in _app_views_hellos_index_html_erb__4319029845790881098_70120024159440'
+  app/views/hellos/index.html.erb:4:in `_app_views_hellos_index_html_erb__4319029845790881098_70120024159440'
+  app/controllers/hellos_controller.rb:7:in `index'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (14.9ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-16 20:21:28 +0900
+Processing by HellosController#index as HTML
+  [1m[36mDiary Load (0.2ms)[0m  [1mSELECT `diaries`.* FROM `diaries` WHERE (1)[0m
+  Rendered hellos/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 18ms (Views: 12.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 20:21:28 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 20:21:29 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 20:21:29 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 20:21:29 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 20:21:29 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 20:21:29 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 20:21:29 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 20:21:29 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-16 20:22:12 +0900
+Processing by HellosController#index as HTML
+  [1m[35mDiary Load (0.2ms)[0m  SELECT `diaries`.* FROM `diaries` WHERE (1)
+  Rendered hellos/index.html.erb within layouts/application (9.6ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (wrong number of arguments(7 for 1)):
+    7:     </tr>
+    8: 
+    9:     <tr>
+    10:       <td><%= markdown(dia.text) %></td>
+    11:     </tr>
+    12:   <% end %>
+    13: </table>
+  app/helpers/application_helper.rb:13:in `render'
+  app/helpers/application_helper.rb:13:in `markdown'
+  app/views/hellos/index.html.erb:10:in `block in _app_views_hellos_index_html_erb__4319029845790881098_70120024159440'
+  app/views/hellos/index.html.erb:4:in `_app_views_hellos_index_html_erb__4319029845790881098_70120024159440'
+  app/controllers/hellos_controller.rb:7:in `index'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-16 20:22:27 +0900
+Processing by HellosController#index as HTML
+  [1m[36mDiary Load (0.2ms)[0m  [1mSELECT `diaries`.* FROM `diaries` WHERE (1)[0m
+  Rendered hellos/index.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (wrong number of arguments(7 for 1)):
+    7:     </tr>
+    8: 
+    9:     <tr>
+    10:       <td><%= markdown(dia.text) %></td>
+    11:     </tr>
+    12:   <% end %>
+    13: </table>
+  app/helpers/application_helper.rb:13:in `render'
+  app/helpers/application_helper.rb:13:in `markdown'
+  app/views/hellos/index.html.erb:10:in `block in _app_views_hellos_index_html_erb__4319029845790881098_70120024159440'
+  app/views/hellos/index.html.erb:4:in `_app_views_hellos_index_html_erb__4319029845790881098_70120024159440'
+  app/controllers/hellos_controller.rb:7:in `index'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-16 20:22:37 +0900
+Processing by HellosController#index as HTML
+  [1m[35mDiary Load (0.2ms)[0m  SELECT `diaries`.* FROM `diaries` WHERE (1)
+  Rendered hellos/index.html.erb within layouts/application (23.7ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (undefined method `to_html' for #<String:0x007f8c2e4abdb8>):
+    7:     </tr>
+    8: 
+    9:     <tr>
+    10:       <td><%= markdown(dia.text) %></td>
+    11:     </tr>
+    12:   <% end %>
+    13: </table>
+  app/helpers/application_helper.rb:13:in `markdown'
+  app/views/hellos/index.html.erb:10:in `block in _app_views_hellos_index_html_erb__4319029845790881098_70120024159440'
+  app/views/hellos/index.html.erb:4:in `_app_views_hellos_index_html_erb__4319029845790881098_70120024159440'
+  app/controllers/hellos_controller.rb:7:in `index'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-16 20:22:42 +0900
+Processing by HellosController#index as HTML
+  [1m[36mDiary Load (0.2ms)[0m  [1mSELECT `diaries`.* FROM `diaries` WHERE (1)[0m
+  Rendered hellos/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 16ms (Views: 10.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-16 20:22:42 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-16 20:22:42 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-16 20:22:42 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-16 20:22:42 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-16 20:22:42 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-16 20:22:42 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-16 20:22:42 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-16 20:22:42 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-16 20:22:51 +0900
+Processing by HellosController#index as HTML
+  [1m[35mDiary Load (0.2ms)[0m  SELECT `diaries`.* FROM `diaries` WHERE (1)
+  Rendered hellos/index.html.erb within layouts/application (10.3ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (wrong number of arguments(7 for 1)):
+    7:     </tr>
+    8: 
+    9:     <tr>
+    10:       <td><%= markdown(dia.text) %></td>
+    11:     </tr>
+    12:   <% end %>
+    13: </table>
+  app/helpers/application_helper.rb:13:in `render'
+  app/helpers/application_helper.rb:13:in `markdown'
+  app/views/hellos/index.html.erb:10:in `block in _app_views_hellos_index_html_erb__4319029845790881098_70120024159440'
+  app/views/hellos/index.html.erb:4:in `_app_views_hellos_index_html_erb__4319029845790881098_70120024159440'
+  app/controllers/hellos_controller.rb:7:in `index'
+
+
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.8ms)

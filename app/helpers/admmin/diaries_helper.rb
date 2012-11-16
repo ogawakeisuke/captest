@@ -1,0 +1,2 @@
+module Admmin::DiariesHelper
+end

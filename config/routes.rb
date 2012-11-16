@@ -1,5 +1,9 @@
 Captest::Application.routes.draw do
-  get "hellos/index"
+ 
+ namespace :admmin do
+    root :to => 'diaries#index'
+    resources :diaries
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

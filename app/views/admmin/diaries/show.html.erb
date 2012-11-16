@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>title:</b>
+  <%= @diary.title %>
+</p>
+
+<p>
+  <b>text:</b>
+  <%= @diary.text %>
+</p>
+
+<%= link_to 'Edit', :action =>"edit" ,:id => @diary.id  %> |
+<%= link_to 'Back', :action =>"index" %>
