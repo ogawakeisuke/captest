@@ -1,9 +1,9 @@
-worker_processes 2
+worker_processes 4
 working_directory "/home/deploy/captest/current"
 
 listen '/tmp/unicorn_captest.sock'
 pid "/tmp/unicorn.pid"
-#listen 8080, :tcp_nopush => true
+listen 8080, :tcp_nopush => true
 
 timeout 1200
 
@@ -29,3 +29,5 @@ end
 after_fork do |server, worker|
   defined?(ActiveRecord::Base) and ActiveRecord::Base.establish_connection
 end
+
+

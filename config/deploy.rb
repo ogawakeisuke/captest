@@ -3,19 +3,20 @@ require "bundler/capistrano"
 
 set :application, "captest"
 set :repository,  "git@github.com:ogawakeisuke/captest.git"
-set :deploy_to, "/home/deploy/#{application}"
+set :scm, :git
+set :branch, "master"
+
 set :rails_env, "development"
+set :user, 'ogawa'
+set :user_sudo, false
+
+set :deploy_to, "/home/deploy/#{application}"
 
 #ここらの情報はRAILS_ENVに応じて変わってくることが多いので本来はdeploy/に個別に設定する
 
-set :scm, :git
-set :branch, "master"
 set :scm_verbose, true
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
-
-set :user, 'ogawa'
-set :user_sudo, true
 
 
 set :bundle_gemfile, "Gemfile" #バンドル系
