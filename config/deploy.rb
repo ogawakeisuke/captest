@@ -33,12 +33,12 @@ set :unicorn_config, "#{current_path}/config/unicorn.rb"
 set :unicorn_pid, "/home/deploy/captest/shared/pids/unicorn.pid"
 
 
-=begin
+
 #sqlite対策
 task :db_setup, :roles => [:db] do
   run "mkdir -p -m 775 #{shared_path}/db"
 end
-=end
+
 
 #unicornスタート設定　完コピ
 namespace :deploy do
