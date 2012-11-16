@@ -18,3 +18,16 @@ Started GET "/" for 127.0.0.1 at 2012-11-15 14:59:51 +0900
 Processing by HellosController#index as HTML
   Rendered text template (0.0ms)
 Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (195.3ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (28.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateDiaries (20121116082254)
+  [1m[35m (8.8ms)[0m  CREATE TABLE `diaries` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `text` text, `tag_id` int(11), `visibility` int(11), `state` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (2.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20121116082254')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 

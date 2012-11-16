@@ -6,7 +6,7 @@ set :repository,  "git@github.com:ogawakeisuke/captest.git"
 set :scm, :git
 set :branch, "master"
 
-set :rails_env, "development"
+set :rails_env, "production"
 set :user, 'ogawa'
 set :user_sudo, false
 
