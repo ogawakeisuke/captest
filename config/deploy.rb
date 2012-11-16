@@ -30,7 +30,7 @@ role :app, "ec2-54-242-182-42.compute-1.amazonaws.com"                          
 role :db,  "ec2-54-242-182-42.compute-1.amazonaws.com", :primary => true # This is where Rails migrations will run
 
 set :unicorn_config, "#{current_path}/config/unicorn.rb"
-set :unicorn_pid, "#{current_path}/tmp/pids/unicorn.pid"
+set :unicorn_pid, "/home/deploy/captest/shared/pids/unicorn.pid"
 
 
 =begin
