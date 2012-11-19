@@ -5,11 +5,27 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-  <link rel="stylesheet" type="text/css" href="/ref/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/ref/bootstrap/css/bootstrap.css">
 </head>
 <body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a href="http://tab.uniba.jp" class="brand">tab.uniba.jp</a>
+        <ul class="nav">
+          <li class=<%= "active" if request.path == "/" %>><%= link_to "index", root_path %></li>
+          <li class=<%= "active" if request.path == "/matter" %> ><%= link_to "プランニングミッション", matter_path %></li>
+        </ul>
 
-<%= yield %>
+      </div>
+    </div>
+  </div>
+
+  <div id="container" role="main">
+    <%= yield %>
+  </div>  
+
+<script src="/ref/bootstrap/js/bootstrap.min.js" ></script>
 
 </body>
 </html>

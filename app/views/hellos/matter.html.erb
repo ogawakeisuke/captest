@@ -1,0 +1,18 @@
+
+  <div class="wrapper">
+    
+    <div class="hero-unit">
+      <h1>ミッション</h1>
+      <br>
+      <p>プランニングチームの方針。<br>
+      条件、オーダー、マターを決めて考えることが大事。</p>
+    </div>
+    
+    <div class="row">
+      <div class="span4"><%= @matters[1] %></div>
+    </div>
+
+    <div class="row">
+      <div class="span8"><%= markdown(@matters.first.text) %></div>
+    </div>
+  </div>

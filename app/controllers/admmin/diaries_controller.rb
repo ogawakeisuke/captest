@@ -1,7 +1,7 @@
 class Admmin::DiariesController < ApplicationController
   
   def index
-    @diaries = Diary.visibility
+    @diaries = Diary.all
   end
 
   def show

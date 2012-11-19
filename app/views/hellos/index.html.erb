@@ -1,13 +1,19 @@
-<div id="wrap">
-  <table>
-    <% @diaries.each do |dia| %>
-      <tr>
-        <td><%= dia.title %></td>
-      </tr>
 
-      <tr>
-        <td><%= markdown(dia.text) %></td>
-      </tr>
+  <div class="wrapper">
+    
+    <div class="hero-unit">
+      <h1>まとめ</h1>
+      <p>プランニングチームのまとめ<br>
+      レイアウトや文の構成、情報の整理をアップデートしながら、提案の素材としてのログ提供を目指す</p>
+    </div>
+    
+    <% @diaries.each do |dia| %>
+    <div class="row">
+      <div class="span10"><%= dia.title %></div>
+    </div>
+
+    <div class="row">
+      <div class="span12"><%= markdown(dia.text) %></div>
+    </div>
     <% end %>
-  </table>
-</div>
+  </div>
