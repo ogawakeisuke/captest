@@ -10852,3 +10852,192 @@ ActionController::RoutingError (No route matches [GET] "/ref/bootstrap/css/boots
 
 
   Rendered /Users/ogawa/.rvm/gems/ruby-1.9.3-p125@captest/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-19 19:51:53 +0900
+Processing by HellosController#index as HTML
+  [1m[36mDiary Load (0.3ms)[0m  [1mSELECT `diaries`.* FROM `diaries` WHERE `diaries`.`visibility` = 1[0m
+  Rendered hellos/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-19 19:51:53 +0900
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/css/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-11-19 19:51:53 +0900
+Served asset /css/bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2012-11-19 19:51:53 +0900
+Served asset /css/bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/css/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2012-11-19 19:51:53 +0900
+Served asset /css/bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/css/bootstrap.css?body=1" for 127.0.0.1 at 2012-11-19 19:51:53 +0900
+Served asset /css/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-19 19:51:53 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-19 19:51:53 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-19 19:51:53 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-19 19:51:53 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-19 19:51:53 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-19 19:51:53 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap.js?body=1" for 127.0.0.1 at 2012-11-19 19:51:53 +0900
+Served asset /js/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-11-19 19:51:53 +0900
+Served asset /js/bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-19 19:51:53 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/matter" for 127.0.0.1 at 2012-11-19 19:51:55 +0900
+Processing by HellosController#static_matter as HTML
+  [1m[35mDiary Load (0.3ms)[0m  SELECT `diaries`.* FROM `diaries` WHERE `diaries`.`state` = 2
+  Rendered hellos/matter.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/css/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2012-11-19 19:51:55 +0900
+Served asset /css/bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/css/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-11-19 19:51:55 +0900
+Served asset /css/bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/css/bootstrap.css?body=1" for 127.0.0.1 at 2012-11-19 19:51:55 +0900
+Served asset /css/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-19 19:51:55 +0900
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-19 19:51:55 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2012-11-19 19:51:55 +0900
+Served asset /css/bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-19 19:51:55 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-19 19:51:55 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-19 19:51:55 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-19 19:51:55 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-19 19:51:55 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap.js?body=1" for 127.0.0.1 at 2012-11-19 19:51:55 +0900
+Served asset /js/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-11-19 19:51:55 +0900
+Served asset /js/bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-19 19:51:56 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-19 19:51:59 +0900
+Processing by HellosController#index as HTML
+  [1m[36mDiary Load (1.8ms)[0m  [1mSELECT `diaries`.* FROM `diaries` WHERE `diaries`.`visibility` = 1[0m
+  Rendered hellos/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-19 19:51:59 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/css/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-11-19 19:51:59 +0900
+Served asset /css/bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/css/bootstrap.css?body=1" for 127.0.0.1 at 2012-11-19 19:51:59 +0900
+Served asset /css/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/css/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2012-11-19 19:51:59 +0900
+Served asset /css/bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2012-11-19 19:51:59 +0900
+Served asset /css/bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.css?body=1" for 127.0.0.1 at 2012-11-19 19:51:59 +0900
+Served asset /admmin/diaries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/hellos.css?body=1" for 127.0.0.1 at 2012-11-19 19:51:59 +0900
+Served asset /hellos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-19 19:51:59 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-19 19:51:59 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admmin/diaries.js?body=1" for 127.0.0.1 at 2012-11-19 19:51:59 +0900
+Served asset /admmin/diaries.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/hellos.js?body=1" for 127.0.0.1 at 2012-11-19 19:51:59 +0900
+Served asset /hellos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap.js?body=1" for 127.0.0.1 at 2012-11-19 19:51:59 +0900
+Served asset /js/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-11-19 19:51:59 +0900
+Served asset /js/bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-19 19:51:59 +0900
+Served asset /application.js - 304 Not Modified (0ms)
