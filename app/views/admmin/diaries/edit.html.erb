@@ -1,22 +1,27 @@
-<h1>Editing welcome</h1>
+<div class="hero-unit">
+</div>
 
-<%= form_for @diary,:url => {:action => :update} do |f| %>
-  <% if @diary.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@diary.errors.count, "error") %> prohibited this welcome from being saved:</h2>
+<div class="container">
+  <div class="row">
+    <%= form_for @diary,:url => {:action => :update} do |f| %>
+      <% if @diary.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@diary.errors.count, "error") %> prohibited this welcome from being saved:</h2>
 
-      <ul>
-      <% @diary.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
+          <ul>
+          <% @diary.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
       <% end %>
-      </ul>
-    </div>
-  <% end %>
 
 
-  <%= render "form",  :f => f %>
+      <%= render "form",  :f => f %>
 
-<% end %>
+    <% end %>
 
-<%= link_to 'Show', :action =>"show" ,:id => @diary.id  %> |
-<%= link_to 'Back', :action =>"index" %>
+    <%= link_to 'Show', :action =>"show" ,:id => @diary.id  %> |
+    <%= link_to 'Back', :action =>"index" %>
+  </div>
+</div>

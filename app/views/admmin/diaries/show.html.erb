@@ -1,14 +1,33 @@
-<p id="notice"><%= notice %></p>
+<div class="hero-unit">
+</div>
 
-<p>
-  <b>title:</b>
-  <%= @diary.title %>
-</p>
+<div class="container">
+  <div class="row">
+    <p id="notice"><%= notice %></p>
 
-<p>
-  <b>text:</b>
-  <%= @diary.text %>
-</p>
+    <div class="span10">
+      <p>
+        <b>title:</b>
+        <%= @diary.title %>
+      </p>
+    </div>
+    <div class="span2">
+    </div>
+  </div>
 
-<%= link_to 'Edit', :action =>"edit" ,:id => @diary.id  %> |
-<%= link_to 'Back', :action =>"index" %>
+  <div class="row">
+    <div class="span8">
+      <p>
+        <b>text:</b>
+        <%= markdown(@diary.text) %>
+      </p>
+    </div>
+    <div class="span4">
+    </div>
+  </div>
+
+    <%= link_to 'Edit', :action =>"edit" ,:id => @diary.id  %> |
+    <%= link_to 'Back', :action =>"index" %>
+
+  </div>
+</div>

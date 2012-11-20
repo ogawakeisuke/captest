@@ -1,24 +1,28 @@
+<div class="hero-unit">
+</div>
 
-<table>
-  <tr>
-    <th>title</th>
-    <th>date</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div class="container">
+  <div class="row">
+    <table class="table table-striped table-bordered table-condensed">
+      <thead>
+        <th>title</th>
+        <th>date</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </thead>
 
+      <% @diaries.each do |dia| %>
+      <tbody>
+        <td><%=dia.title %></td>
+        <td><%=dia.created_at %></td>
+        <td><%= link_to 'Show', "admmin/diaries/#{dia.id}" %></td>
+        <td><%= link_to 'Edit', "admmin/diaries/#{dia.id}/edit"%></td>
+        <td><%= link_to 'Destroy', "admmin/diaries/#{dia.id}", confirm: 'Are you sure?', method: :delete %></td>
+      </tbody>
+      <% end %>
+    </table>
 
-  <%= @diaries.each do |dia| %>
-  <tr>
-    <td><%=dia.title %></td>
-    <td><%=dia.created_at %></td>
-    <td><%= link_to 'Show', "admmin/diaries/#{dia.id}" %></td>
-    <td><%= link_to 'Edit', "admmin/diaries/#{dia.id}/edit"%></td>
-    <td><%= link_to 'Destroy', "admmin/diaries/#{dia.id}", confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-  <% end %>
-</table>
-
-<%= link_to 'New', :action =>"new" %>
-
+  <%= link_to 'New', :action =>"new" %>
+  </div>
+</div>

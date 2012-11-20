@@ -15,6 +15,7 @@
         <ul class="nav">
           <li class=<%= "active" if request.path == "/" %>><%= link_to "matome", root_path %></li>
           <li class=<%= "active" if request.path == "/matter" %> ><%= link_to "プランニングミッション", matter_path %></li>
+          <li class=<%= "active" if request.path == "/customer_list" %> ><%= link_to "顧客カルテ", customer_list_path %></li>
         </ul>
 
       </div>

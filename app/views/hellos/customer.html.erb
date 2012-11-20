@@ -1,0 +1,19 @@
+ 
+  <div class="hero-unit">
+    <br>
+    <p>今まで大型の引き合いやプロジェクトを受けた顧客や案件の分析。<br>
+    ３つのミッションと用件の定義を軸に考える。</p>
+  </div>
+  
+  <% unless @customers.empty? %>  
+  <div class="container">
+    <div class="row">
+      <div class="span10"></div>
+      <div class="span2"><%= @customers.first.title %></div>
+    </div>
+
+    <div class="row">
+      <div class="span10"><%= markdown(@customers.first.text) %></div>
+    </div>
+  </div>
+  <% end %>
