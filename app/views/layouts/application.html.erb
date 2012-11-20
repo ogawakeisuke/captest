@@ -13,7 +13,7 @@
       <div class="container">
         <a href="http://tab.uniba.jp" class="brand">tab.uniba.jp</a>
         <ul class="nav">
-          <li class=<%= "active" if request.path == "/" %>><%= link_to "index", root_path %></li>
+          <li class=<%= "active" if request.path == "/" %>><%= link_to "matome", root_path %></li>
           <li class=<%= "active" if request.path == "/matter" %> ><%= link_to "プランニングミッション", matter_path %></li>
         </ul>
 
@@ -21,9 +21,15 @@
     </div>
   </div>
 
-  <div id="container" role="main">
     <%= yield %>
-  </div>  
+    
+  <footer id="footer" style="
+background: #333;
+line-height: 40px;
+padding: 50px 0 20px 30px;
+margin-top: 80px;
+"></footer>
+
 
 <script src="/ref/bootstrap/js/bootstrap.min.js" ></script>
 
